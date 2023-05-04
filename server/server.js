@@ -19,3 +19,15 @@ app.post('/pay',(req,res)=>{
     const amount=req.body.amount //paid amount
     const phone=req.body.phone  //recipients phone number
 })
+//initiate trans..
+
+daraja.LipaNaMpesa(amount,phone)
+.then(result=>{
+    console.log(result)
+    res.send(result) //send trans.. back to the frontend
+})
+.catch(err=>{
+    console.log(err)  //log the error messaeg
+    res.status.send(err)  //send error back to the frontend 
+})
+
