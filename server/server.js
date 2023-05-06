@@ -30,4 +30,8 @@ daraja.LipaNaMpesa(amount,phone)
     console.log(err)  //log the error messaeg
     res.status.send(err)  //send error back to the frontend 
 })
-
+ //starting  your server
+const port = processs.env.PORT || 3000
+app.listen(port,()=>{
+    console.log(`server listening  on ${port} `)
+})
