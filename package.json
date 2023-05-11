@@ -12,6 +12,7 @@
     "africastalking": "^0.6.2",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mpesa": "^1.0.5",
     "nodemon": "^2.0.22",
